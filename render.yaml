@@ -9,3 +9,7 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
+      - key: CARGO_HOME
+        value: /tmp/cargo
+      - key: CARGO_TARGET_DIR
+        value: /tmp/cargo-target
