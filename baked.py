@@ -3,6 +3,7 @@
 from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 import hashlib
@@ -14,6 +15,7 @@ from email.mime.multipart import MIMEMultipart
 import uuid
 import random
 import string
+import os
 
 app = FastAPI(title="Bei Ya Jioni API", version="1.0.0")
 
